@@ -1,22 +1,19 @@
-
 function Footer() {
     return (
-        <footer className="bg-dark sticky-bottom text-white">
-            <ul className="nav justify-content-center">
-                <li className="nav-item">
-                        FAQ
-                </li>
-                </ul>
+        <footer className="bg-dark text-white py-3" style={{ width: "100%", position: "fixed", bottom: 0 }}>
+            <div className="container text-center">
                 <ul className="nav justify-content-center">
-                <li>
-                        About
-                </li>
+                    <li className="nav-item">
+                        <a className="nav-link text-white" href="#">FAQ</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link text-white" href="#">About</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link text-white" href="#">Contact</a>
+                    </li>
                 </ul>
-                <ul className="nav justify-content-center">
-                <li>
-                        Contact
-                </li>
-            </ul>
+            </div>
         </footer>
     );
 }
